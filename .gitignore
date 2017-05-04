@@ -1,3 +1,5 @@
 .env
 sqljs.sketch
-todo.md 
+todo.md
+setup.md
+requirements.py
