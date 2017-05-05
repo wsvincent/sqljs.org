@@ -1,19 +1,23 @@
 html {
-	background:#222;
+	background:#fafafa;
 	margin:auto;
-	width:80%;
+	width:95%;
 }
 
 body{
-	background: linear-gradient(#aaa 0, #ddd 10px, #fff 55px);
+	/*background: linear-gradient(#aaa 0, #ddd 10px, #fff 55px);*/
 	border: 1px solid black;
 	padding: 10px 20px;
-	box-shadow: 5px 0px 30px #000;
+	/*box-shadow: 5px 0px 30px #000;*/
 	border-radius: 8px;
+  font-family:-apple-system,BlinkMacSystemFont,helvetica neue,roboto,arial,sans-serif;
+  font-size: 18px;
 }
 
 h1 {
-	text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
 	color: #222;
 	margin: 0 0 30px;
 }
@@ -26,7 +30,6 @@ h1 {
 	padding: 7px;
 	margin-right: 5px;
 	transition: .3s;
-	font-family: ubuntu, sans-serif;
 	font-size: 1em;
 }
 
@@ -76,6 +79,7 @@ th, td {
 }
 
 footer {
+  background-color: #fafafa;
 	font-size:.8em;
 	color: #222;
 }
