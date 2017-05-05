@@ -40,6 +40,7 @@ SELECT designation,COUNT(*) AS nbr, (AVG(salary)) AS avg_salary FROM employees G
 SELECT name,hired_on FROM employees ORDER BY hired_on;</textarea>
 
   <button id="execute" class="button">Execute</button>
+  <button id="refresh" class="button" onClick="window.location.reload()">Refresh</button>
   <button id='savedb'  class="button">Save the db</button>
   <label class="button">Load an SQLite database file: <input type='file' id='dbfile' ></label>
 
