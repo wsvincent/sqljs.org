@@ -4,34 +4,35 @@
   <meta charset="utf8">
   <title>SQLjs: Online SQL Interpreter</title>
   <meta name="description" content="Free online SQL interpreter written in JavaScript.">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="codemirror/lib/codemirror.css">
-  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="css/base.css">
   <script src="codemirror/lib/codemirror.js"></script>
 
 </head>
 <body>
 	<h1>Online SQL Interpreter</h1>
   <main>
-      <label for='commands'>Enter some SQL</label>
-      <br>
+    <textarea id="commands">CREATE TABLE parents AS
+      SELECT "abraham" AS parent, "barack" AS child UNION
+      SELECT "abraham"          , "clinton"         UNION
+      SELECT "delano"           , "herbert"         UNION
+      SELECT "fillmore"         , "abraham"         UNION
+      SELECT "fillmore"         , "delano"          UNION
+      SELECT "fillmore"         , "grover"          UNION
+      SELECT "eisenhower"       , "fillmore";
 
-      <textarea id="commands">CREATE TABLE parents AS
-  SELECT "abraham" AS parent, "barack" AS child UNION
-  SELECT "abraham"          , "clinton"         UNION
-  SELECT "delano"           , "herbert"         UNION
-  SELECT "fillmore"         , "abraham"         UNION
-  SELECT "fillmore"         , "delano"          UNION
-  SELECT "fillmore"         , "grover"          UNION
-  SELECT "eisenhower"       , "fillmore";</textarea>
+SELECT * from parents;
+    </textarea>
 
-  <button id="execute" class="button">Execute</button>
-  <button id="refresh" class="button" onClick="window.location.reload()">Refresh</button>
-  <button id='savedb'  class="button">Save the db</button>
-  <label class="button">Load an SQLite database file: <input type='file' id='dbfile' ></label>
+      <button id="execute" class="button"><i class="fa fa-bolt" aria-hidden="true"></i> Execute</button>
+      <button id="refresh" class="button" onClick="window.location.reload()"><i class="fa fa-refresh" aria-hidden="true"></i> Refresh</button>
+      <button id='savedb'  class="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Save the db</button>
+      <label class="button"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Load an SQLite database file: <input type='file' id='dbfile' ></label>
 
-  <div id="error" class="error"></div>
+      <div id="error" class="error"></div>
 
-  <pre id="output">Results will be displayed here</pre>
+      <pre id="output">Results will be displayed here</pre>
   </main>
 
   <script src="codemirror/mode/sql/sql.js"></script>
