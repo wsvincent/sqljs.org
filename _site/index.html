@@ -10,9 +10,10 @@
   <script src="codemirror/lib/codemirror.js"></script>
 
 </head>
-<body>
-	<h1>Online SQL Interpreter</h1>
-  <main>
+<body class="site">
+  <main class="site-content">
+  <h1>Online SQL Interpreter</h1>
+
     <textarea id="commands">CREATE TABLE parents AS
       SELECT "abraham" AS parent, "barack" AS child UNION
       SELECT "abraham"          , "clinton"         UNION
@@ -35,12 +36,11 @@ SELECT * from parents;
       <pre id="output">Results will be displayed here</pre>
   </main>
 
-  <script src="codemirror/mode/sql/sql.js"></script>
-
   <footer>
     Original code by <a href="https://github.com/kripken" target="_blank">kripken</a> (<a href="https://github.com/kripken/sql.js" target="_blank">sql.js</a>) and now maintained by <a href="https://github.com/lovasoa" target="_blank">lovasoa</a>. Design by <a href="https://wsvincent.com" target="_blank">Will Vincent</a>.
   </footer>
 
+  <script src="codemirror/mode/sql/sql.js"></script>
   <script type="text/javascript" src="gui.js"></script>
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};

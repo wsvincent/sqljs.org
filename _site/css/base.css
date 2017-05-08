@@ -1,14 +1,26 @@
-html {
-	background:#fafafa;
-	margin:auto;
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
 }
 
 body{
 	padding: 10px 20px;
-	/*box-shadow: 5px 0px 30px #000;*/
   font-family:-apple-system,BlinkMacSystemFont,helvetica neue,roboto,arial,sans-serif;
   font-size: 18px;
 }
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+a:hover, a:visited {
+  color: #222;
+}
+
 
 h1 {
   font-size: 2rem;
@@ -17,16 +29,24 @@ h1 {
 	margin: 0 0 30px;
 }
 
-.main {
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.site-content {
+  flex: 1; }
+
+/*.main {
   background-color: #fafafa;
-}
+}*/
 
 .fa {
-  color: #333;
+  color: #222;
 }
 
 .button {
-	color: #333;
+	color: #222;
 	background: linear-gradient(#eee, #ddd);
 	border: 1px solid #222;
 	border-radius: 3px;
@@ -72,7 +92,7 @@ h1 {
 table {
 	width:auto;
 	margin:auto;
-	border:1px solid black;
+	border:1px solid #222;
  	border-collapse:collapse;
  	margin-bottom:10px;
 }
@@ -82,7 +102,8 @@ th, td {
 }
 
 footer {
-  background-color: #fafafa;
+  height: 30px;
+  padding: 0px;
 	font-size:.8em;
-	color: #222;
+	color: #828895;
 }
