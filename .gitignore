@@ -1,8 +1,4 @@
 .env
 sqljs.sketch
-todo.md
-setup.md
-requirements.py
-fabfile.py
 __pycache__
 *py[c]
