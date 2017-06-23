@@ -1,7 +1,0 @@
-- button to refresh page to paste again?
-- mobile?
-- better fonts/take up full space
-- placeholder text, on click goes away...
-- Google Analytics
-- Google webmasters
-- Tweet...
